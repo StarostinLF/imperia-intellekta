@@ -1,0 +1,169 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 18%;
+}
+.logo__img {
+  max-width: 30%;
+}
+@media (min-width: 320px) and (max-width: 577px) {
+  .logo__img {
+    width: 50px;
+  }
+}
+.logo__title {
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .logo__title {
+    font-size: 12px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .logo__title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .logo__title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  .logo {
+    width: 100%;
+  }
+}
+@media (max-width: 769px) {
+  .logo {
+    width: 40%;
+  }
+}
+
+.global__nav-items {
+  font-family: Champagne Limousines;
+  font-size: 18px;
+  font-weight: normal;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .global__nav-items {
+    font-size: 14px;
+  }
+}
+.global__nav-items a {
+  color: #000;
+}
+.global__icons-center {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+.global__icons-around {
+  display: flex;
+  justify-content: space-around;
+}
+.global__icons_socials {
+  fill: #0059ff;
+  width: 24px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .global__icons_socials {
+    width: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .global__icons {
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+  }
+}
+.global__text {
+  font-family: Champagne Limousines;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .global__text {
+    font-size: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .global__text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .global__text {
+    font-size: 14px;
+  }
+}
+
+.header__burger-menu {
+  border: 2px solid #000;
+}
+@media (max-width: 576px) {
+  .header__burger-menu {
+    margin: 0 1.5em;
+  }
+}
+
+.manager {
+  background: url(../../images/backgrounds/blue-bottom-full.webp);
+  background-size: cover;
+}
+.manager__card {
+  padding: 0 2em 2em 2em;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 50px 1px #737D8C;
+}
+.manager__avatar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.manager__img {
+  width: 20%;
+}
+@media (min-width: 1200px) {
+  .manager__img {
+    width: 50%;
+  }
+}
+.manager__title {
+  font-family: Champagne Limousines;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  background-color: #0059ff;
+  border-radius: 20px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .manager__title {
+    font-size: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .manager__title {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .manager__title {
+    font-size: 14px;
+  }
+}
+.manager__text {
+  margin: 20px 0 0 0;
+}
