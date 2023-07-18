@@ -38,18 +38,43 @@
     margin-left: 50px;
   }
 }
+@media (min-width: 769px) and (max-width: 992px) {
+  .logo {
+    width: 23%;
+  }
+}
 
 .global__nav-items {
   font-family: Champagne Limousines;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 700;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+  .global__nav-items {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .global__nav-items {
+    font-size: 14px;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   .global__nav-items {
     font-size: 14px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .global__nav-items {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .global__nav-items {
+    font-size: 22px;
   }
 }
 .global__nav-items a {
