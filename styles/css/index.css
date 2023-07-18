@@ -100,6 +100,28 @@
   fill: #0059ff;
   width: 24px;
 }
+.global__title {
+  font-family: Jost;
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .global__title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .global__title {
+    font-size: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .global__title {
+    font-size: 38px;
+  }
+}
 .global__text {
   font-family: Champagne Limousines;
   font-size: 16px;
@@ -203,39 +225,44 @@
   font-size: 22px;
   font-weight: 700;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+  .manager__text span {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .manager__text span {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .manager__text span {
+    font-size: 20px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .manager__text span {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .manager__text span {
+    font-size: 22px;
+  }
+}
 
 .benefits {
   padding: 50px 0 100px 0;
 }
 .benefits__title {
-  font-family: Jost;
-  font-size: 46px;
-  font-weight: 700;
   color: #17a2dd;
-  text-transform: uppercase;
-  text-align: center;
   margin-bottom: 25px;
-}
-@media (min-width: 320px) and (max-width: 575px) {
-  .benefits__title {
-    font-size: 24px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .benefits__title {
-    font-size: 32px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .benefits__title {
-    font-size: 38px;
-  }
 }
 .benefits .row {
   justify-content: center;
 }
 .benefits__card {
-  height: 300px;
+  height: 100%;
   padding: 80px 20px;
   display: flex;
   flex-direction: column;
@@ -255,17 +282,27 @@
 }
 @media (min-width: 320px) and (max-width: 575px) {
   .benefits__card-title {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .benefits__card-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .benefits__card-title {
-    font-size: 18px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .benefits__card-title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .benefits__card-title {
+    font-size: 22px;
   }
 }
 .benefits__card-img {
@@ -273,11 +310,64 @@
   height: 120px;
   padding: 12px;
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%);
   background-color: #fff;
   border: 3px solid #2360b4;
   border-radius: 50%;
   transition: all 0.3s;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .benefits__card-img {
+    width: 80px;
+    height: 80px;
+    top: 80%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .benefits__card-img {
+    width: 100px;
+    height: 100px;
+    top: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .benefits__card-img {
+    width: 100px;
+    height: 100px;
+    top: 80%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .benefits__card-img {
+    width: 100px;
+    height: 100px;
+    top: 75%;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .benefits__card {
+    padding: 60px 20px 80px 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .benefits__card {
+    padding: 80px 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .benefits__card {
+    padding: 80px 20px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .benefits__card {
+    padding: 80px 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .benefits__card {
+    padding: 80px 20px;
+  }
 }

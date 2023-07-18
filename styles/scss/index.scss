@@ -13,7 +13,7 @@
 
         @media (min-width: 320px) and (max-width: 576px) {
             width: 50%;
-        }        
+        }
     }
 
     &__title {
@@ -37,8 +37,8 @@
     }
 
     @media (min-width: 769px) and (max-width: 992px) {
-            width: 23%;
-        }
+        width: 23%;
+    }
 }
 
 .global {
@@ -94,6 +94,24 @@
         &_socials {
             fill: $ismaDarkColor;
             width: 24px;
+        }
+    }
+
+    &__title {
+        @include jostFont(46px, 700);
+        text-transform: uppercase;
+        text-align: center;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            font-size: 24px;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            font-size: 32px;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            font-size: 38px;
         }
     }
 
@@ -191,6 +209,26 @@
 
         span {
             @include champagneLimousinesFont(22px, 700);
+
+            @media (min-width: 320px) and (max-width: 575px) {
+                font-size: 16px;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                font-size: 18px;
+            }
+
+            @media (min-width: 768px) and (max-width: 992px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 993px) and (max-width: 1199px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 22px;
+            }
         }
     }
 }
@@ -199,23 +237,8 @@
     padding: 50px 0 100px 0;
 
     &__title {
-        @include jostFont(46px, 700);
         color: $ismaLightColor;
-        text-transform: uppercase;
-        text-align: center;
         margin-bottom: 25px;
-
-        @media (min-width: 320px) and (max-width: 575px) {
-            font-size: 24px;
-        }
-
-        @media (min-width: 576px) and (max-width: 767px) {
-            font-size: 32px;
-        }
-
-        @media (min-width: 768px) and (max-width: 992px) {
-            font-size: 38px;
-        }
     }
 
     .row {
@@ -223,7 +246,7 @@
     }
 
     &__card {
-        height: 300px;
+        height: 100%;
         padding: 80px 20px;
         display: flex;
         flex-direction: column;
@@ -240,15 +263,23 @@
             @include champagneLimousinesFont(22px, 700);
 
             @media (min-width: 320px) and (max-width: 575px) {
-                font-size: 14px;
-            }
-
-            @media (min-width: 576px) and (max-width: 767px) {
                 font-size: 16px;
             }
 
-            @media (min-width: 768px) and (max-width: 992px) {
+            @media (min-width: 576px) and (max-width: 767px) {
                 font-size: 18px;
+            }
+
+            @media (min-width: 768px) and (max-width: 992px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 993px) and (max-width: 1199px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 22px;
             }
         }
 
@@ -257,13 +288,57 @@
             height: 120px;
             padding: 12px;
             position: absolute;
-            top: 75%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%);
             background-color: $whiteColor;
             border: 3px solid #2360b4;
             border-radius: 50%;
             transition: all 0.3s;
+
+            @media (min-width: 320px) and (max-width: 575px) {
+                width: 80px;
+                height: 80px;
+                top: 80%;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                width: 100px;
+                height: 100px;
+                top: 80%;
+            }
+
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 100px;
+                height: 100px;
+                top: 80%;
+            }
+
+            @media (min-width: 993px) and (max-width: 1199px) {
+                width: 100px;
+                height: 100px;
+                top: 75%;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            padding: 60px 20px 80px 20px;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            padding: 80px 20px;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            padding: 80px 20px;
+        }
+
+        @media (min-width: 993px) and (max-width: 1199px) {
+            padding: 80px 20px;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            padding: 80px 20px;
         }
     }
 }
