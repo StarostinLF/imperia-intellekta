@@ -1,9 +1,24 @@
 $whiteColor: #fff;
-$greyColor: #737D8C;
+$greyColor: #737d8c;
 $blackColor: #000;
 
-$ismaLightColor: #17a2dd;
-$ismaDarkColor: #0059ff;
+$ismaLightBlueColor: #17a2dd;
+$ismaDarkBlueColor: #0059ff;
+$ismaManagerOverlayColor: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0) 95%,
+    rgba(255, 255, 255, 1) 100%
+);
+$ismaDirectionsOverlayColor: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 1) 100%
+);
+
+$sectionMarginPadding: 100px 0 100px 0;
 
 $jostFont: Jost;
 $champagneLimousinesFont: Champagne Limousines;

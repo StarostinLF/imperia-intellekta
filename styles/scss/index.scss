@@ -41,6 +41,10 @@
     }
 }
 
+.hr {
+    color: $greyColor;
+}
+
 .global {
     &__nav-items {
         @include champagneLimousinesFont(22px, 700);
@@ -92,13 +96,14 @@
         }
 
         &_socials {
-            fill: $ismaDarkColor;
+            fill: $ismaDarkBlueColor;
             width: 24px;
         }
     }
 
     &__title {
         @include jostFont(46px, 700);
+        margin-bottom: 25px;
         text-transform: uppercase;
         text-align: center;
 
@@ -152,7 +157,11 @@
 
 .manager {
     background: url(../../images/backgrounds/blue-bottom-full.webp) center / cover;
-    //filter: blur(4px);
+
+    &__overlay {
+        backdrop-filter: blur(1px);
+        background: $ismaManagerOverlayColor;
+    }
 
     &__card {
         display: flex;
@@ -199,7 +208,7 @@
         @include champagneLimousinesFont(18px, 700);
         color: $whiteColor;
         padding: 10px;
-        background-color: $ismaDarkColor;
+        background-color: $ismaDarkBlueColor;
         border-radius: 20px;
     }
 
@@ -234,11 +243,10 @@
 }
 
 .benefits {
-    padding: 50px 0 100px 0;
+    padding: $sectionMarginPadding;
 
     &__title {
-        color: $ismaLightColor;
-        margin-bottom: 25px;
+        color: $ismaLightBlueColor;
     }
 
     .row {
@@ -254,9 +262,9 @@
         position: relative;
         text-align: center;
         color: $whiteColor;
-        background-color: $ismaLightColor;
+        background-color: $ismaLightBlueColor;
         border-radius: 8px;
-        box-shadow: 5px 5px 10px $greyColor;
+        box-shadow: 0 0 10px 1px $greyColor;
         transition: all 0.3s;
 
         &-title {
@@ -339,6 +347,83 @@
 
         @media (min-width: 1200px) and (max-width: 1399px) {
             padding: 80px 20px;
+        }
+    }
+}
+
+.directions {
+    margin: $sectionMarginPadding;
+    background: url(../../images/backgrounds/bg-silver.png) center / contain;
+
+    &__overlay {
+        backdrop-filter: blur(1px);
+        background: $ismaDirectionsOverlayColor;
+    }
+
+    &__title {
+        color: $ismaLightBlueColor;
+    }
+
+    &__list {
+        justify-content: space-around;
+
+        &-item {
+            width: 300px;
+            height: 350px;
+        }
+    }
+
+    &__card {
+        position: relative;
+        text-decoration: none;
+
+        &-item {
+            width: 95%;
+            height: 80%;
+            padding: 40px 20px;
+            background-color: $ismaLightBlueColor;
+            border-radius: 30px;
+        }
+
+        &-text {
+            @include jostFont(22px, 700);
+            color: $whiteColor;
+        }
+
+        &-img {
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            left: -10%;
+        }
+    }
+}
+
+.modal {
+    &-content {
+        border-radius: 30px;
+    }
+
+    &-header {
+        border-bottom: none;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: 25px;
+    }
+
+    &__body {
+        &-title {
+            @include jostFont(32px, 700);
+
+            span {
+                @include champagneLimousinesFont(22px, 400);
+            }
+        }
+
+        &-text {
         }
     }
 }

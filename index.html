@@ -76,39 +76,49 @@
 
     <main>
         <section class="manager">
-            <div class="container">
-                <div class="row px-3 py-5">
-                    <div class="col-12 col-lg-6 col-xl-7 col-xxl-8">
-                        <div class="row row-cols-1 row-cols-xl-2 manager__card">
-                            <div class="col manager__avatar">
-                                <img src="./images/manager/manager.webp" alt="manager.webp" class="manager__img">
+            <div class="manager__overlay">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="col-12 col-lg-6 col-xl-7 col-xxl-8">
+                            <div class="row row-cols-1 row-cols-xl-2 manager__card">
+                                <div class="col manager__avatar">
+                                    <img src="./images/gallery/manager/manager.webp" alt="manager.webp"
+                                        class="manager__img">
 
-                                <span class="manager__title">
-                                    Руководитель центра<br>
-                                    Олеся Александровна Дудоровна
-                                </span>
+                                    <span class="manager__title">
+                                        Руководитель центра<br>
+                                        Олеся Александровна Дудоровна
+                                    </span>
+                                </div>
+
+                                <p class="col global__text manager__text">
+                                    <span>Добрый день, друзья!</span><br><br>
+                                    Наш центр был создан с целью содействия росту интеллектуального потенциала будущего
+                                    детей в возрасте от 5 до 16 лет. Именно для этого были разработаны авторские
+                                    методики по
+                                    обучению ментальной арифметике, скорочтению и каллиграфии, которые является не
+                                    только
+                                    инновационными, но и адаптированными программами для развития умственных
+                                    способностей
+                                    детей. В наших методиках гармонично сочетаются лучший опыт современных международных
+                                    школ и многовековые практические знания. Мы стремимся к тому, чтобы каждый ребенок
+                                    вырос
+                                    уникальным и смог внести свой вклад в развитие своей страны и даже всего мира!
+                                    Главная
+                                    задача нашей школы — научить молодое поколение креативно мыслить, синхронно
+                                    задействовав
+                                    оба полушария головного мозга.
+                                </p>
                             </div>
-
-                            <p class="col global__text manager__text">
-                                <span>Добрый день, друзья!</span><br><br>
-                                Наш центр был создан с целью содействия росту интеллектуального потенциала будущего
-                                детей в возрасте от 5 до 16 лет. Именно для этого были разработаны авторские методики по
-                                обучению ментальной арифметике, скорочтению и каллиграфии, которые является не только
-                                инновационными, но и адаптированными программами для развития умственных способностей
-                                детей. В наших методиках гармонично сочетаются лучший опыт современных международных
-                                школ и многовековые практические знания. Мы стремимся к тому, чтобы каждый ребенок вырос
-                                уникальным и смог внести свой вклад в развитие своей страны и даже всего мира! Главная
-                                задача нашей школы — научить молодое поколение креативно мыслить, синхронно задействовав
-                                оба полушария головного мозга.
-                            </p>
                         </div>
-                    </div>
 
-                    <div class="col manager__slider">
-                        <!-- Добавить свайпер !-->
+                        <div class="col manager__slider">
+                            <!-- Добавить свайпер !-->
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
         <section class="benefits">
@@ -154,7 +164,26 @@
 
         </section>
 
-        <section class="directions"></section>
+        <section class="directions">
+            <div class="directions__overlay">
+                <div class="container">
+                    <h2 class="global__title directions__title">Направления</h2>
+
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-xl-4 directions__list">
+                        <div class="col directions__list-item">
+                            <a href="#" class="directions__card" data-bs-toggle="modal" data-bs-target="#mentalMath">
+                                <article class="directions__card-item">
+                                    <h3 class="directions__card-text">Ментальная информатика</h3>
+                                </article>
+
+                                <img src="./images/gallery/directions/Group 1.png" alt="directions-1.png"
+                                    class="directions__card-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="reviews"></section>
 
@@ -208,6 +237,39 @@
 
         <p class="text-center text-body-secondary mt-4">© 2023 Империя интеллекта</p>
     </footer>
+
+    <div class="modal modal-lg fade" id="mentalMath" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="./images/gallery/directions/directions-1.png" alt="directions-1.png" class="modal__img">
+
+                    <h3 class="modal__body-title">
+                        Ментальная информатика <span>(по методике «ISMA»)</span>
+                    </h3>
+
+                    <hr class="hr">
+
+                    <p class="global__text modal__body-text">
+                        Уникальная методика развития умственных способностей детей от 4 до 16 лет, основанная на системе
+                        устного счета. Обучаясь
+                        этой методике ребенок может решить любые арифметические задачи за несколько секунд (сложение,
+                        вычитание, умножение,
+                        деление, вычисление квадратного корня числа) в уме быстрее, чем с помощью калькулятора.<br><br>
+                        Методика тренирует скорость восприятия и обработки информации, развивает оба полушария мозга
+                        одновременно за счет
+                        мысленной визуализации вычислений на счетах абакус. Высокая скорость устного счета — это не
+                        главный, но интересный
+                        «побочный эффект».
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
