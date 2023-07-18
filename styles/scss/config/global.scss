@@ -1,6 +1,4 @@
-body {
-  color: #111;
-}
+@import "./vars";
 
 h1,
 h2,
@@ -18,5 +16,5 @@ blockquote {
 }
 
 a {
-  color: inherit;
+  color: inherit !important;
 }

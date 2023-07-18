@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/css/global.min.css">
     <link rel="stylesheet" href="./styles/css/index.min.css">
 
     <title>Империя интеллекта</title>
@@ -29,7 +30,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse global__nav-items" id="navbarIsma">
+            <div class="collapse navbar-collapse global__nav-items" id="navbarImperia">
                 <ul class="navbar-nav gap-3 align-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#">О нас</a>
@@ -49,7 +50,7 @@
                 </ul>
             </div>
 
-            <div class="collapse navbar-collapse global__icons-around" id="navbarIsma">
+            <div class="collapse navbar-collapse global__icons-around" id="navbarImperia">
                 <a
                     href="whatsapp://send?phone=79033020444&amp;text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B7%D0%BE%D0%B2%D1%83%D1%82%20%D0%9E%D0%BB%D0%B5%D1%81%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%BD%D0%B0%20%D0%94%D1%83%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%AF%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D1%88%D0%BA%D0%BE%D0%BB%D1%8B%20%22%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%22.%20%D0%91%D1%83%D0%B4%D1%83%20%D1%80%D0%B0%D0%B4%D0%B0%20%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C%20%D0%B2%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%B5%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0.%20">
                     <svg xmlns="http://www.w3.org/2000/svg" class="global__icons_socials" viewBox="0 0 16 16">
@@ -76,19 +77,20 @@
     <main>
         <section class="manager">
             <div class="container">
-                <div class="row row-cols-1 row-cols-lx-2 py-5">
-                    <div class="col">
-                        <div class="manager__card">
-                            <div class="manager__avatar">
+                <div class="row px-3 py-5">
+                    <div class="col-12 col-lg-6 col-xl-7 col-xxl-8">
+                        <div class="row row-cols-1 row-cols-xl-2 manager__card">
+                            <div class="col manager__avatar">
                                 <img src="./images/manager/manager.webp" alt="manager.webp" class="manager__img">
+
                                 <span class="manager__title">
                                     Руководитель центра<br>
                                     Олеся Александровна Дудоровна
                                 </span>
                             </div>
 
-                            <p class="global__text manager__text">
-                                Добрый день, друзья!<br><br>
+                            <p class="col global__text manager__text">
+                                <span>Добрый день, друзья!</span><br><br>
                                 Наш центр был создан с целью содействия росту интеллектуального потенциала будущего
                                 детей в возрасте от 5 до 16 лет. Именно для этого были разработаны авторские методики по
                                 обучению ментальной арифметике, скорочтению и каллиграфии, которые является не только
@@ -109,20 +111,61 @@
             </div>
         </section>
 
-        <section></section>
+        <section class="benefits">
+            <div class="container">
+                <h2 class="benefits__title">Наши преимущества</h2>
 
-        <section></section>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-5">
+                    <div class="col">
+                        <article class="benefits__card">
+                            <h3 class="benefits__card-title">Качество обучения превыше всего</h3>
 
-        <section></section>
+                            <span class="global__text benefits__card-text">Наша главная цель — высокий результат.</span>
 
-        <section></section>
+                            <img src="./images/icons/benefits-1.webp" alt="benefits icon" class="benefits__card-img">
+                        </article>
+                    </div>
 
-        <section></section>
+                    <div class="col">
+                        <article class="benefits__card">
+                            <h3 class="benefits__card-title">В мини-группах от 2 до 4 человек</h3>
+
+                            <span class="global__text benefits__card-text">Это гарантирует индивидуальный подход и 100%
+                                усвоение
+                                пройденных тем.</span>
+
+                            <img src="./images/icons/benefits-2.webp" alt="benefits icon" class="benefits__card-img">
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="benefits__card">
+                            <h3 class="benefits__card-title">Каждая тема изучается в шесть этапов</h3>
+
+                            <span class="global__text benefits__card-text">Мы используем все каналы восприятия,
+                                благодаря чему,
+                                ребенок освоит новую тему.</span>
+
+                            <img src="./images/icons/benefits-3.webp" alt="benefits icon" class="benefits__card-img">
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="directions"></section>
+
+        <section class="reviews"></section>
+
+        <section class="map"></section>
+
+        <section class="request"></section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer p-3">
         <nav class="container border-bottom py-4">
-            <ul class="nav global__nav-items mb-4">
+            <ul class="nav global__nav-items mb-3">
                 <li class="nav-item">
                     <a class="nav-link" href="#">О нас</a>
                 </li>
@@ -163,7 +206,7 @@
             </div>
         </nav>
 
-        <p class="text-center text-body-secondary">© 2023 Империя интеллекта</p>
+        <p class="text-center text-body-secondary mt-4">© 2023 Империя интеллекта</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
