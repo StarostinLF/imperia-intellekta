@@ -658,7 +658,7 @@
 
 .map {
   padding: 100px 0;
-  background: url(../../images/backgrounds/blue-bottom.webp) center/cover;
+  background: url(../../images/backgrounds/blue-mid.webp) top/cover;
 }
 .map__address-list {
   background-color: #fff;
