@@ -390,8 +390,8 @@
 
         <section class="map">
             <div class="container">
-                <address class="row">
-                    <div class="col">
+                <address class="row row-cols-1 row-cols-lg-2 g-5">
+                    <div class="col col-lg-4">
                         <ul class="map__address-list">
                             <li class="map__address-list-item">
                                 <span class="map__title">Адрес</span>
@@ -399,22 +399,31 @@
                             </li>
 
                             <li class="map__address-list-item">
-                                <span class="map__title">E-mail</span>
-                                <a href="mailto:IsmaSchool@gmail.com" class="global__text">IsmaSchool@gmail.com</a>
+                                <a href="mailto:IsmaSchool@gmail.com" class="map__address-link">
+                                    <span class="map__title">E-mail</span>
+                                    <span class="global__text map__text">
+                                        IsmaSchool@gmail.com
+                                    </span>
+                                </a>
                             </li>
 
                             <li class="map__address-list-item">
-                                <span class="map__title">Телефон</span>
-                                <a href="tel:+79033020444" class="global__text">+7 (903) 302-04-44</a>
+                                <a href="tel:+79033020444" class="map__address-link">
+                                    <span class="map__title">Телефон</span>
+                                    <span class="global__text map__text">+7 (903) 302-04-44</span>
+                                </a>
                             </li>
 
                             <li class="map__address-list-item">
-                                <button>Как проехать?</button>
+                                <a href="https://как-проехать.рф/самара/дом/осипенко-10а" target="_blank"
+                                    class="map__title map__address-link text-center">
+                                    Как проехать?
+                                </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col col-lg-8">
                         <iframe
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c88f92514066b96ca266b586e7e7171fd965586140f477e82e6cdcdbaf02eaf&amp;source=constructor"
                             frameborder="0"></iframe>
