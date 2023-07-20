@@ -116,6 +116,7 @@
         }
 
         &-text {
+            font-weight: 700;
         }
     }
 }
@@ -162,6 +163,10 @@
 
         a {
             color: $blackColor;
+
+            &:hover {
+                color: $greyColor !important;
+            }
         }
     }
 
@@ -353,7 +358,11 @@
         background-color: $ismaLightBlueColor;
         border-radius: 8px;
         box-shadow: $boxShadow;
-        transition: all 0.3s;
+        transition-duration: 500ms;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
 
         &-title {
             @include champagneLimousinesFont(22px, 700);
@@ -479,6 +488,12 @@
             width: 300px;
             height: 350px;
             margin: 0 10px;
+            transition-duration: 500ms;
+
+            &:hover {
+                opacity: 0.8;
+                transform: translateY(-20px);
+            }
         }
     }
 
@@ -635,8 +650,17 @@
                 padding: 10px 20px;
                 color: $whiteColor;
                 background-color: $ismaLightBlueColor;
+                border: 2px solid $ismaLightBlueColor;
                 border-radius: 30px;
                 box-shadow: $boxShadow;
+                transition-duration: 500ms;
+
+                &:hover {
+                    color: $ismaLightBlueColor;
+                    background-color: $whiteColor;
+                    border: 2px solid $ismaLightBlueColor;
+                    transform: translateX(5px);
+                }
 
                 &:first-child {
                     display: flex;
@@ -776,6 +800,13 @@
             background-color: $whiteColor;
             border: none;
             border-radius: 30px;
+            transition-duration: 500ms;
+
+            &:hover {
+                color: $greyColor;
+                background-color: $whiteColor;
+                transform: translateY(-10px);
+            }
 
             @media (min-width: 320px) and (max-width: 575px) {
                 font-size: 20px;
