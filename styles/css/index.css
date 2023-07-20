@@ -156,7 +156,7 @@
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .global__nav-items {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (min-width: 993px) and (max-width: 1199px) {
@@ -261,7 +261,7 @@
 .manager__overlay {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0) 95%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0) 100%);
 }
 .manager__card {
   display: flex;
@@ -632,27 +632,27 @@
 }
 @media (min-width: 320px) and (max-width: 575px) {
   .reviews {
-    margin: 50px 0;
+    padding: 50px 0;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .reviews {
-    margin: 50px 0;
+    padding: 50px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .reviews {
-    margin: 80px 0;
+    padding: 80px 0;
   }
 }
 @media (min-width: 993px) and (max-width: 1199px) {
   .reviews {
-    margin: 80px 0;
+    padding: 80px 0;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .reviews {
-    margin: 100px 0;
+    padding: 100px 0;
   }
 }
 
@@ -738,5 +738,151 @@
 @media (min-width: 768px) and (max-width: 992px) {
   .map iframe {
     height: 500px;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .map {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .map {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .map {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .map {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .map {
+    padding: 100px 0;
+  }
+}
+
+.feedback {
+  padding: 100px 0;
+}
+.feedback__title {
+  color: #fff;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #17a2dd;
+  border-radius: 30px;
+}
+.feedback__form-label {
+  font-family: Jost;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .feedback__form-label {
+    font-size: 24px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .feedback__form-label {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .feedback__form-label {
+    font-size: 28px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .feedback__form-label {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .feedback__form-label {
+    font-size: 32px;
+  }
+}
+.feedback__form-input {
+  color: #000;
+}
+.feedback__form-input::-moz-placeholder {
+  color: #737d8c;
+}
+.feedback__form-input::placeholder {
+  color: #737d8c;
+}
+.feedback__form-button {
+  width: 50%;
+  padding: 20px;
+  font-family: Jost;
+  font-size: 32px;
+  font-weight: 700;
+  color: #17a2dd;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .feedback__form-button {
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .feedback__form-button {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .feedback__form-button {
+    font-size: 28px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .feedback__form-button {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .feedback__form-button {
+    font-size: 32px;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .feedback__form {
+    padding: 40px 20px 20px 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .feedback {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .feedback {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .feedback {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .feedback {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .feedback {
+    padding: 100px 0;
   }
 }

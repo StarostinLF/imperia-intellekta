@@ -390,7 +390,7 @@
 
         <section class="map">
             <div class="container">
-                <address class="row row-cols-1 row-cols-lg-2 g-5">
+                <address class="row row-cols-1 row-cols-lg-2 gap-4 gap-lg-0">
                     <div class="col col-lg-4">
                         <ul class="map__address-list">
                             <li class="map__address-list-item">
@@ -432,7 +432,58 @@
             </div>
         </section>
 
-        <section class="request"></section>
+        <section class="feedback">
+            <div class="container">
+                <form class="needs-validation feedback__form" action="send_telegram.php" method="post"
+                    id="feedbackForm">
+                    <h2 class="global__title feedback__title">Оставьте заявку</h2>
+
+                    <div class="d-flex flex-column gap-3">
+                        <div class="feedback__form-item">
+                            <label for="nameInput" class="form-label feedback__form-label">Ваше имя</label>
+                            <input type="text" class="form-control feedback__form-input" id="nameInput" name="nameInput"
+                                aria-describedby="emailHelp" placeholder="Введите Ваше имя" required>
+                        </div>
+
+                        <div class="feedback__form-item">
+                            <label for="specializationInput" class="form-label feedback__form-label">Направление</label>
+                            <select class="form-select feedback__form-input" id="specializationInput"
+                                name="specializationInput" aria-label="Default select example" required>
+                                <option selected disabled value="">Выберите направление</option>
+                                <option value="1">Ментальная арифметика</option>
+                                <option value="2">Скорочтение</option>
+                                <option value="3">Каллиграфия</option>
+                                <option value="4">Нейропсихологическая диагностика</option>
+                                <option value="5">Диагностика готовности к школе</option>
+                                <option value="6">Подготовка к школе</option>
+                                <option value="7">Коррекционные занятия</option>
+                                <option value="8">Русский язык</option>
+                                <option value="9">Математика</option>
+                                <option value="10">Эффективное чтение</option>
+                            </select>
+                        </div>
+
+                        <div class="feedback__form-item">
+                            <label for="phoneNumberInput" class="form-label feedback__form-label">Телефон</label>
+                            <input type="tel" class="form-control feedback__form-input" id="phoneNumberInput"
+                                name="phoneNumberInput" placeholder="Ваш номер телефона" required>
+                        </div>
+
+                        <div class="feedback__form-item">
+                            <label for="ageInput" class="form-label feedback__form-label">Возраст ребенка</label>
+                            <input type="text" class="form-control feedback__form-input" id="ageInput" name="ageInput"
+                                placeholder="Введите возраст ребенка" required>
+                        </div>
+                    </div>
+
+                    <a class="text-center mt-5">
+                        <button type="submit" class="feedback__form-button">Отправить заявку</button>
+                    </a>
+
+                    <p id="successMessage" class="text-success d-none">Форма отправлена успешно</p>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer p-3">
