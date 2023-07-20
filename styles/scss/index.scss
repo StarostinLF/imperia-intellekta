@@ -397,7 +397,7 @@
             left: 50%;
             transform: translate(-50%);
             background-color: $whiteColor;
-            border: 3px solid #2360b4;
+            border: 3px solid $ismaDarkBlueColor;
             border-radius: 50%;
             transition: all 0.3s;
 
@@ -563,7 +563,7 @@
 
     &__carousel {
         &-icon {
-            color: $ismaLightBlueColor;
+            color: $ismaDarkBlueColor;
             width: 96px;
             height: 96px;
         }
