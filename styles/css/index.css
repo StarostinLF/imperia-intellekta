@@ -421,7 +421,7 @@
   left: 50%;
   transform: translate(-50%);
   background-color: #fff;
-  border: 3px solid #2360b4;
+  border: 3px solid #0059ff;
   border-radius: 50%;
   transition: all 0.3s;
 }
