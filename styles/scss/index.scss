@@ -1,10 +1,6 @@
 @import "./config/vars";
 @import "./config/mixins";
 
-.hr {
-    color: $greyColor;
-}
-
 .modal {
     &-content {
         border-radius: 30px;
