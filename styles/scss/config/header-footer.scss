@@ -42,6 +42,12 @@
 }
 
 .header {
+    background-color: $whiteColor;
+    box-shadow: $boxShadow;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
     &__burger-menu {
         border: 2px solid $blackColor;
 
