@@ -16,6 +16,13 @@ $ismaDirectionsOverlayColor: linear-gradient(
     rgba(255, 255, 255, 0) 50%,
     rgba(255, 255, 255, 1) 97%
 );
+$ismaGalleryOverlayColor: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0) 95%,
+    rgba(255, 255, 255, 1) 100%
+);
 
 $sectionMarginPadding: 100px 0;
 

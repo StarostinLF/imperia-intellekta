@@ -1,165 +1,69 @@
 @import "./config/vars";
-@import "./config/mixins";
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    width: 25%;
-
-    &__img {
-        width: 30%;
-
-        @media (min-width: 320px) and (max-width: 576px) {
-            width: 50%;
-        }
-    }
-
-    &__title {
-        @include jostFont(18px, 700);
-
-        @media (min-width: 320px) and (max-width: 576px) {
-            font-size: 12px;
-        }
-
-        @media (min-width: 577px) and (max-width: 768px) {
-            font-size: 14px;
-        }
-
-        @media (min-width: 769px) and (max-width: 992px) {
-            font-size: 16px;
-        }
-    }
-
-    @media (min-width: 320px) and (max-width: 576px) {
-        margin-left: 50px;
-    }
-
-    @media (min-width: 769px) and (max-width: 992px) {
-        width: 23%;
-    }
-}
 
 .hr {
     color: $greyColor;
 }
 
-.global {
-    &__nav-items {
-        @include champagneLimousinesFont(22px, 700);
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: $whiteColor;
 
-        @media (min-width: 320px) and (max-width: 575px) {
-            font-size: 14px;
-        }
-
-        @media (min-width: 576px) and (max-width: 767px) {
-            font-size: 14px;
-        }
-
-        @media (min-width: 768px) and (max-width: 992px) {
-            font-size: 16px;
-        }
-
-        @media (min-width: 993px) and (max-width: 1199px) {
-            font-size: 20px;
-        }
-
-        @media (min-width: 1200px) and (max-width: 1399px) {
-            font-size: 22px;
-        }
-
-        a {
-            color: $blackColor;
-
-            &:hover {
-                color: $greyColor !important;
-            }
-        }
-    }
-
-    &__icons {
-        &-center {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-        }
-
-        &-around {
-            display: flex;
-            justify-content: space-around;
-
-            @media (max-width: 768px) {
-                justify-content: center;
-                gap: 50px;
-                padding-top: 20px;
-            }
-        }
-
-        &_socials {
-            fill: $ismaDarkBlueColor;
-            width: 24px;
-        }
-    }
-
-    &__title {
-        @include jostFont(46px, 700);
-        margin-bottom: 25px;
-        text-transform: uppercase;
-        text-align: center;
-
-        @media (min-width: 320px) and (max-width: 575px) {
-            font-size: 26px;
-        }
-
-        @media (min-width: 576px) and (max-width: 767px) {
-            font-size: 32px;
-        }
-
-        @media (min-width: 768px) and (max-width: 992px) {
-            font-size: 38px;
-        }
-    }
-
-    &__text {
-        @include champagneLimousinesFont(16px, 700);
-
-        @media (min-width: 320px) and (max-width: 575px) {
-            font-size: 12px;
-        }
-
-        @media (min-width: 576px) and (max-width: 767px) {
-            font-size: 14px;
-        }
-
-        @media (min-width: 768px) and (max-width: 992px) {
-            font-size: 16px;
-        }
-
-        @media (min-width: 993px) and (max-width: 1199px) {
-            font-size: 16px;
-        }
-
-        @media (min-width: 1200px) and (max-width: 1399px) {
-            font-size: 16px;
-        }
+    &-thumb {
+        background-color: $ismaLightBlueColor;
     }
 }
 
-.header {
-    &__burger-menu {
-        border: 2px solid $blackColor;
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-        @media (max-width: 576px) {
-            margin: 0 1.5em;
-        }
-    }
+.main {
+    flex: 1 0 auto;
 }
 
 .gallery {
-    min-height: 71vh;
     background: url(../../images/backgrounds/bg-silver.png) center / contain;
+
+    &__overlay {
+        padding: $sectionMarginPadding;
+        height: 800px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        backdrop-filter: blur(2px);
+        background: $ismaGalleryOverlayColor;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            padding: 50px 0;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            padding: 50px 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            padding: 80px 0;
+        }
+
+        @media (min-width: 993px) and (max-width: 1199px) {
+            padding: 80px 0;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            padding: 100px 0;
+        }
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+.footer {
+    flex: 0 0 auto;
 }
