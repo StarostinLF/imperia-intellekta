@@ -179,6 +179,57 @@
             }
         }
     }
+
+    .carousel {
+        &-inner {
+            padding: 10px;
+        }
+
+        &-item {
+            padding: 0px;
+            border-radius: 10px;
+            box-shadow: $boxShadow;
+        }
+
+        &-control {
+            &-prev {
+                left: 60%;
+
+                @media (max-width: 992px) {
+                    left: 25%;
+                }
+            }
+
+            &-next {
+                @media (max-width: 992px) {
+                    right: 25%;
+                }
+            }
+
+            &-prev,
+            &-next {
+                top: 120%;
+
+                @media (max-width: 992px) {
+                    top: 104%;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        svg {
+            width: 64px;
+            fill: $whiteColor;
+
+            @media (max-width: 992px) {
+                width: 46px;
+            }
+        }
+    }
 }
 
 .benefits {
