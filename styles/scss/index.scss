@@ -1,6 +1,8 @@
 @import "./config/vars";
 @import "./config/mixins";
 
+/* Модальное окно (попап) */
+
 .modal {
     &-content {
         border-radius: 30px;
@@ -77,6 +79,8 @@
     }
 }
 
+/* Слайдер */
+
 .carousel {
     &-inner {
         padding: 10px;
@@ -89,6 +93,8 @@
         box-shadow: $boxShadow;
     }
 }
+
+/* Блок с руководителем центра */
 
 .manager {
     background: url(../../images/backgrounds/blue-bottom-full.webp) center / cover;
@@ -228,6 +234,8 @@
     }
 }
 
+/* Преимушества */
+
 .benefits {
     padding: $sectionMarginPadding;
 
@@ -361,6 +369,8 @@
     }
 }
 
+/* Направления */
+
 .directions {
     margin: $sectionMarginPadding;
     background: url(../../images/backgrounds/bg-silver.png) center / contain;
@@ -447,6 +457,8 @@
     }
 }
 
+/* Отзывы */
+
 .reviews {
     padding: $sectionMarginPadding;
 
@@ -523,6 +535,8 @@
         padding: 100px 0;
     }
 }
+
+/* Адрес и Яндекс карта */
 
 .map {
     padding: $sectionMarginPadding;
@@ -636,6 +650,8 @@
         padding: 100px 0;
     }
 }
+
+/* Форма заявки */
 
 .feedback {
     padding: $sectionMarginPadding;

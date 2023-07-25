@@ -1,6 +1,7 @@
 @import "./vars";
 @import "./mixins";
 
+/* Обнуление заголовков и текста */
 
 h1,
 h2,
@@ -20,6 +21,8 @@ blockquote {
 a {
   color: inherit !important;
 }
+
+/* Глобальные стили заголовков и текста */
 
 .global {
   &__nav-items {
@@ -124,6 +127,8 @@ a {
     }
   }
 }
+
+/* Разделитель */
 
 .hr {
   color: $greyColor;
