@@ -100,7 +100,8 @@
   background: url(../../images/backgrounds/blue-bottom-full.webp) center / cover;
 
   &__overlay {
-    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
     background: $ismaManagerOverlayColor;
   }
 
@@ -376,7 +377,8 @@
   background: url(../../images/backgrounds/bg-silver.png) center / contain;
 
   &__overlay {
-    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
     background: $ismaDirectionsOverlayColor;
   }
 
@@ -695,6 +697,22 @@
 
     &-input {
       color: $blackColor;
+
+      &::-webkit-input-placeholder {
+        color: $greyColor;
+      }
+
+      &::-moz-placeholder {
+        color: $greyColor;
+      }
+
+      &:-ms-input-placeholder {
+        color: $greyColor;
+      }
+
+      &::-ms-input-placeholder {
+        color: $greyColor;
+      }
 
       &::placeholder {
         color: $greyColor;

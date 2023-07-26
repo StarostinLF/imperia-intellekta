@@ -35,7 +35,8 @@
     height: 800px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
     background: $ismaGalleryOverlayColor;
 
     @media (min-width: 320px) and (max-width: 575px) {
@@ -63,8 +64,10 @@
     height: 100%;
     width: 100%;
     border-radius: 30px;
-    object-position: center;
-    object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

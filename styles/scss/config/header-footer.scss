@@ -48,6 +48,7 @@
 .header {
   background-color: $whiteColor;
   box-shadow: $boxShadow;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
