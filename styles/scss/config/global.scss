@@ -3,6 +3,12 @@
 
 /* Обнуление заголовков и текста */
 
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2,
 h3,
@@ -126,6 +132,12 @@ a {
       font-size: 16px;
     }
   }
+}
+
+/* Главный контент страницы */
+
+.main {
+  flex: 1 1 auto;
 }
 
 /* Разделитель */
