@@ -1,962 +1,1373 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/css/fonts.min.css">
-    <link rel="stylesheet" href="./styles/css/global.min.css">
-    <link rel="stylesheet" href="./styles/css/header-footer.min.css">
-    <link rel="stylesheet" href="./styles/css/index.min.css">
+    <link
+      rel="shortcut icon"
+      href="./images/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/css/fonts.min.css" />
+    <link rel="stylesheet" href="./styles/css/global.min.css" />
+    <link rel="stylesheet" href="./styles/css/header-footer.min.css" />
+    <link rel="stylesheet" href="./styles/css/index.min.css" />
 
     <title>Империя интеллекта</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="container navbar navbar-expand-md">
-            <a href="#" class="navbar-brand logo">
-                <img src="./images/logo/logo-1.png" alt="Logo" class="logo__img">
-                <h1 class="logo__title">Империя интеллекта</h1>
-            </a>
+      <nav class="container navbar navbar-expand-md">
+        <a href="#" class="navbar-brand logo">
+          <img src="./images/logo/logo-1.png" alt="Logo" class="logo__img" />
+          <h1 class="logo__title">Империя интеллекта</h1>
+        </a>
 
-            <button class="navbar-toggler header__burger-menu" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarImperia" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler header__burger-menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarImperia"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse global__nav-items" id="navbarImperia">
-                <ul class="navbar-nav gap-3 align-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#manager">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#benefits">Преимущества</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#directions">Направление</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/gallery.html">Галерея</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Отзывы</a>
-                    </li>
-                </ul>
-            </div>
+        <div
+          class="collapse navbar-collapse global__nav-items"
+          id="navbarImperia"
+        >
+          <ul class="navbar-nav gap-3 align-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#manager">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#benefits">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#directions">Направление</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/gallery.html">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Отзывы</a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="collapse navbar-collapse global__icons-around" id="navbarImperia">
-                <a
-                    href="whatsapp://send?phone=79033020444&amp;text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B7%D0%BE%D0%B2%D1%83%D1%82%20%D0%9E%D0%BB%D0%B5%D1%81%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%BD%D0%B0%20%D0%94%D1%83%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%AF%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D1%88%D0%BA%D0%BE%D0%BB%D1%8B%20%22%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%22.%20%D0%91%D1%83%D0%B4%D1%83%20%D1%80%D0%B0%D0%B4%D0%B0%20%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C%20%D0%B2%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%B5%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0.%20">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="global__icons_socials" viewBox="0 0 16 16">
-                        <path
-                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                    </svg>
-                </a>
-                <a href="tg://resolve?domain=OlesyaDudorovaImperial">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="global__icons_socials" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
-                    </svg>
-                </a>
-                <a href="https://vk.com/ii_isma_samara" class="global__icons_socials">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
-                    </svg>
-                </a>
-            </div>
-        </nav>
+        <div
+          class="collapse navbar-collapse global__icons-around"
+          id="navbarImperia"
+        >
+          <a
+            href="whatsapp://send?phone=79033020444&amp;text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B7%D0%BE%D0%B2%D1%83%D1%82%20%D0%9E%D0%BB%D0%B5%D1%81%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%BD%D0%B0%20%D0%94%D1%83%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%AF%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D1%88%D0%BA%D0%BE%D0%BB%D1%8B%20%22%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%22.%20%D0%91%D1%83%D0%B4%D1%83%20%D1%80%D0%B0%D0%B4%D0%B0%20%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C%20%D0%B2%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%B5%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0.%20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="global__icons_socials"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+              />
+            </svg>
+          </a>
+          <a href="tg://resolve?domain=OlesyaDudorovaImperial">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="global__icons_socials"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+              />
+            </svg>
+          </a>
+          <a href="https://vk.com/ii_isma_samara" class="global__icons_socials">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="manager" id="manager">
-            <div class="manager__overlay">
-                <div class="container">
-                    <div class="row px-2 py-5">
-                        <div class="col-12 col-lg-6 col-xl-7">
-                            <div class="row row-cols-1 row-cols-xl-2 manager__card">
-                                <div class="col manager__avatar">
-                                    <img src="./images/gallery/manager/manager.webp" alt="manager.webp"
-                                        class="manager__img">
+      <section class="manager" id="manager">
+        <div class="manager__overlay">
+          <div class="container">
+            <div class="row px-2 py-5">
+              <div class="col-12 col-lg-6 col-xl-7">
+                <div class="row row-cols-1 row-cols-xl-2 manager__card">
+                  <div class="col manager__avatar">
+                    <img
+                      src="./images/gallery/manager/manager.webp"
+                      alt="manager.webp"
+                      class="manager__img"
+                    />
 
-                                    <span class="manager__title">
-                                        Руководитель центра<br>
-                                        Олеся Александровна Дудоровна
-                                    </span>
-                                </div>
+                    <span class="manager__title">
+                      Руководитель центра<br />
+                      Олеся Александровна Дудоровна
+                    </span>
+                  </div>
 
-                                <p class="col global__text manager__text">
-                                    <span>Добрый день, друзья!</span><br><br>
-                                    Наш центр был создан с целью содействия росту интеллектуального потенциала будущего
-                                    детей в возрасте от 5 до 16 лет. Именно для этого были разработаны авторские
-                                    методики по
-                                    обучению ментальной арифметике, скорочтению и каллиграфии, которые является не
-                                    только
-                                    инновационными, но и адаптированными программами для развития умственных
-                                    способностей
-                                    детей. В наших методиках гармонично сочетаются лучший опыт современных международных
-                                    школ и многовековые практические знания. Мы стремимся к тому, чтобы каждый ребенок
-                                    вырос
-                                    уникальным и смог внести свой вклад в развитие своей страны и даже всего мира!
-                                    Главная
-                                    задача нашей школы — научить молодое поколение креативно мыслить, синхронно
-                                    задействовав
-                                    оба полушария головного мозга.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col align-self-center">
-                            <div id="managerCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <button class="carousel-control-prev" type="button" data-bs-target="#managerCarousel"
-                                    data-bs-slide="prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-circle-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
-                                    </svg>
-                                </button>
-
-                                <button class="carousel-control-next" type="button" data-bs-target="#managerCarousel"
-                                    data-bs-slide="next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-circle-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                                    </svg>
-                                </button>
-
-                                <div class="carousel-inner-wrapper">
-                                    <ul class="carousel-inner">
-                                        <li class="carousel-item active" data-bs-interval="10000">
-                                            <img src="./images/gallery/manager/course-1.webp" alt="course-1">
-                                        </li>
-
-                                        <li class="carousel-item" data-bs-interval="10000">
-                                            <img src="./images/gallery/manager/course-2.webp" alt="course-1">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <p class="col global__text manager__text">
+                    <span>Добрый день, друзья!</span><br /><br />
+                    Наш центр был создан с целью содействия росту
+                    интеллектуального потенциала будущего детей в возрасте от 5
+                    до 16 лет. Именно для этого были разработаны авторские
+                    методики по обучению ментальной арифметике, скорочтению и
+                    каллиграфии, которые является не только инновационными, но и
+                    адаптированными программами для развития умственных
+                    способностей детей. В наших методиках гармонично сочетаются
+                    лучший опыт современных международных школ и многовековые
+                    практические знания. Мы стремимся к тому, чтобы каждый
+                    ребенок вырос уникальным и смог внести свой вклад в развитие
+                    своей страны и даже всего мира! Главная задача нашей школы —
+                    научить молодое поколение креативно мыслить, синхронно
+                    задействовав оба полушария головного мозга.
+                  </p>
                 </div>
-            </div>
+              </div>
 
-        </section>
+              <div class="col align-self-center">
+                <div
+                  id="managerCarousel"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#managerCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bi bi-arrow-left-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+                      />
+                    </svg>
+                  </button>
 
-        <section class="benefits" id="benefits">
-            <div class="container">
-                <h2 class="global__title benefits__title">Наши преимущества</h2>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#managerCarousel"
+                    data-bs-slide="next"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bi bi-arrow-right-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      />
+                    </svg>
+                  </button>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 gy-5 px-5 px-sm-0">
-                    <div class="col">
-                        <article class="benefits__card">
-                            <h3 class="benefits__card-title">Качество обучения превыше всего</h3>
+                  <div class="carousel-inner-wrapper">
+                    <ul class="carousel-inner">
+                      <li class="carousel-item active" data-bs-interval="10000">
+                        <img
+                          src="./images/gallery/manager/course-1.webp"
+                          alt="course-1"
+                        />
+                      </li>
 
-                            <span class="global__text benefits__card-text">Наша главная цель — высокий результат.</span>
-
-                            <img src="./images/icons/benefits-1.webp" alt="benefits icon" class="benefits__card-img">
-                        </article>
-                    </div>
-
-                    <div class="col">
-                        <article class="benefits__card">
-                            <h3 class="benefits__card-title">В мини-группах от 2 до 4 человек</h3>
-
-                            <span class="global__text benefits__card-text">Это гарантирует индивидуальный подход и 100%
-                                усвоение
-                                пройденных тем.</span>
-
-                            <img src="./images/icons/benefits-2.webp" alt="benefits icon" class="benefits__card-img">
-                        </article>
-                    </div>
-
-                    <div class="col">
-                        <article class="benefits__card">
-                            <h3 class="benefits__card-title">Каждая тема изучается в шесть этапов</h3>
-
-                            <span class="global__text benefits__card-text">Мы используем все каналы восприятия,
-                                благодаря чему,
-                                ребенок освоит новую тему.</span>
-
-                            <img src="./images/icons/benefits-3.webp" alt="benefits icon" class="benefits__card-img">
-                        </article>
-                    </div>
+                      <li class="carousel-item" data-bs-interval="10000">
+                        <img
+                          src="./images/gallery/manager/course-2.webp"
+                          alt="course-1"
+                        />
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <h2 class="global__title benefits__title">Наши преимущества</h2>
+
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 gy-5 px-5 px-sm-0"
+          >
+            <div class="col">
+              <article class="benefits__card">
+                <h3 class="benefits__card-title">
+                  Качество обучения превыше всего
+                </h3>
+
+                <span class="global__text benefits__card-text"
+                  >Наша главная цель — высокий результат.</span
+                >
+
+                <img
+                  src="./images/icons/benefits-1.webp"
+                  alt="benefits icon"
+                  class="benefits__card-img"
+                />
+              </article>
             </div>
 
-        </section>
+            <div class="col">
+              <article class="benefits__card">
+                <h3 class="benefits__card-title">
+                  В мини-группах от 2 до 4 человек
+                </h3>
 
-        <section class="directions" id="directions">
-            <div class="directions__overlay">
-                <div class="container">
-                    <h2 class="global__title directions__title">Направления</h2>
+                <span class="global__text benefits__card-text"
+                  >Это гарантирует индивидуальный подход и 100% усвоение
+                  пройденных тем.</span
+                >
 
-                    <div class="row row-cols-1 row-cols-xl-4 directions__list">
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal" data-bs-target="#mentalMaths">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Ментальная информатика</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-1.webp"
-                                    alt="Ментальная информатика" class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal" data-bs-target="#speedReading">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Скорочтение</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-2.webp" alt="Скорочтение"
-                                    class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal" data-bs-target="#calligraphy">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Каллиграфия</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-3.webp" alt="Каллиграфия"
-                                    class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal"
-                                data-bs-target="#neuropsychologicalDiagnostics">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Нейропсихологическая диагностика</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-4.webp"
-                                    alt="Нейропсихологическая диагностика" class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal"
-                                data-bs-target="#diagnosticsOfSchoolReadiness">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Диагностика готовности к школе</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-5.webp"
-                                    alt="Диагностика готовности к школе" class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal"
-                                data-bs-target="#preparingForSchool">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Подготовка к школе</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-6.webp" alt="Подготовка к школе"
-                                    class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal"
-                                data-bs-target="#correctionalClasses">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Коррекционные занятия</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-7.webp"
-                                    alt="Коррекционные занятия" class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal"
-                                data-bs-target="#russianLanguage">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Русский язык</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-8.webp" alt="Русский язык"
-                                    class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal" data-bs-target="#maths">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Математика</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-9.webp" alt="Математика"
-                                    class="directions__card-img">
-                            </a>
-                        </div>
-
-                        <div class="col directions__list-item">
-                            <a href="#" class="directions__card" data-bs-toggle="modal"
-                                data-bs-target="#effectiveReading">
-                                <article class="directions__card-item">
-                                    <h3 class="directions__card-text">Эффективное чтение</h3>
-                                </article>
-
-                                <img src="./images/gallery/directions/cards/directions-10.webp" alt="Эффективное чтение"
-                                    class="directions__card-img">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <img
+                  src="./images/icons/benefits-2.webp"
+                  alt="benefits icon"
+                  class="benefits__card-img"
+                />
+              </article>
             </div>
-        </section>
 
-        <section class="reviews" id="reviews">
-            <div class="container">
-                <h2 class="global__title reviews__title">Отзывы</h2>
+            <div class="col">
+              <article class="benefits__card">
+                <h3 class="benefits__card-title">
+                  Каждая тема изучается в шесть этапов
+                </h3>
 
-                <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel"
-                        data-bs-slide="prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-arrow-left" viewBox="0 0 16 16" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                        </svg>
-                    </button>
+                <span class="global__text benefits__card-text"
+                  >Мы используем все каналы восприятия, благодаря чему, ребенок
+                  освоит новую тему.</span
+                >
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel"
-                        data-bs-slide="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg>
-                    </button>
-
-                    <div class="carousel-inner-wrapper offset-1 offset-sm-2 col-10 col-sm-8">
-                        <ul class="carousel-inner">
-                            <li class="carousel-item active" data-bs-interval="10000">
-                                <div class="d-flex flex-column align-items-center mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-person-circle mb-2 reviews__carousel-icon" viewBox="0 0 16 16">
-                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                        <path fill-rule="evenodd"
-                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                                    </svg>
-
-                                    <span class="reviews__carousel-author">Варвара Ракир</span>
-                                </div>
-
-                                <hr>
-
-                                <p class="global__text reviews__carousel-text">
-                                    Замечательное учреждение для детей, прекрасное отношение педагогов, доступный язык
-                                    изложения материала, ребёнок занимается с удовольствием, за пол года отличный,
-                                    заметный результат. Ходим на скорочтение, ментальную математику, занимаемся по
-                                    школьной программе, планируем на каллиграфию. Спасибо огромное педагогам за
-                                    отношение к ребёнку!!!
-                                </p>
-                            </li>
-
-                            <li class="carousel-item" data-bs-interval="10000">
-                                <div class="d-flex flex-column align-items-center mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-people-fill reviews__carousel-icon" viewBox="0 0 16 16">
-                                        <path
-                                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-                                    </svg>
-
-                                    <span class="reviews__carousel-author">Самарцева Мария</span>
-                                    <span class="reviews__carousel-author">Самарцев Влад, 10 лет</span>
-                                </div>
-
-                                <hr>
-
-                                <p class="global__text reviews__carousel-text">
-                                    Ходим в эту школу на ментальную арифметику с марта 2022г. Очень внимательные,
-                                    любящие детей педагоги с большой буквы. Ребёнок с удовольствием бежит на занятия,
-                                    сейчас подключили скорочтение и каллиграфию, очень довольны. Всем родителям
-                                    рекомендуем обязательно привести своего малыша на занятия в ISMA.
-                                </p>
-                            </li>
-
-                            <li class="carousel-item" data-bs-interval="10000">
-                                <div class="d-flex flex-column align-items-center mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        class="bi bi-person-circle mb-2 reviews__carousel-icon" viewBox="0 0 16 16">
-                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                        <path fill-rule="evenodd"
-                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                                    </svg>
-
-                                    <span class="reviews__carousel-author">Наталья Прошина</span>
-                                </div>
-
-                                <hr>
-
-                                <p class="global__text reviews__carousel-text">
-                                    Ходим в ISMA с 5 лет. Начинали только с ментальной арифметики. Потом добавили
-                                    скорочтение и подготовку к школе. Сейчас продолжаем ходить на ментальную арифметику.
-                                    Преподаватели замечательные, к каждому ребёнку свой подход. Дочка занимается сама с
-                                    удовольствием. Сейчас на каникулах скучает по учителям и урокам, за это огромное
-                                    спасибо Олесе Александровне и Анжелике Анатольевне!
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <img
+                  src="./images/icons/benefits-3.webp"
+                  alt="benefits icon"
+                  class="benefits__card-img"
+                />
+              </article>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="map">
-            <div class="container">
-                <address class="row row-cols-1 row-cols-lg-2 gap-4 gap-lg-0">
-                    <div class="col col-lg-4">
-                        <ul class="map__address-list">
-                            <li class="map__address-list-item">
-                                <span class="map__title">Адрес</span>
-                                <span class="global__text map__text">г.Самара, ул. Осипенко 10а</span>
-                            </li>
+      <section class="directions" id="directions">
+        <div class="directions__overlay">
+          <div class="container">
+            <h2 class="global__title directions__title">Направления</h2>
 
-                            <li class="map__address-list-item">
-                                <a href="mailto:IsmaSchool@gmail.com" class="map__address-link">
-                                    <span class="map__title">E-mail</span>
-                                    <span class="global__text map__text">
-                                        IsmaSchool@gmail.com
-                                    </span>
-                                </a>
-                            </li>
+            <div class="row row-cols-1 row-cols-xl-4 directions__list">
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mentalMaths"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">
+                      Ментальная информатика
+                    </h3>
+                  </article>
 
-                            <li class="map__address-list-item">
-                                <a href="tel:+79033020444" class="map__address-link">
-                                    <span class="map__title">Телефон</span>
-                                    <span class="global__text map__text">+7 (903) 302-04-44</span>
-                                </a>
-                            </li>
+                  <img
+                    src="./images/gallery/directions/cards/directions-1.webp"
+                    alt="Ментальная информатика"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
 
-                            <li class="map__address-list-item">
-                                <a href="https://как-проехать.рф/самара/дом/осипенко-10а" target="_blank"
-                                    class="map__title map__address-link text-center">
-                                    Как проехать?
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#speedReading"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">Скорочтение</h3>
+                  </article>
 
-                    <div class="col col-lg-8">
-                        <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c88f92514066b96ca266b586e7e7171fd965586140f477e82e6cdcdbaf02eaf&amp;source=constructor"
-                            frameborder="0"></iframe>
-                    </div>
-                </address>
+                  <img
+                    src="./images/gallery/directions/cards/directions-2.webp"
+                    alt="Скорочтение"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#calligraphy"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">Каллиграфия</h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-3.webp"
+                    alt="Каллиграфия"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#neuropsychologicalDiagnostics"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">
+                      Нейропсихологическая диагностика
+                    </h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-4.webp"
+                    alt="Нейропсихологическая диагностика"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#diagnosticsOfSchoolReadiness"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">
+                      Диагностика готовности к школе
+                    </h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-5.webp"
+                    alt="Диагностика готовности к школе"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#preparingForSchool"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">Подготовка к школе</h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-6.webp"
+                    alt="Подготовка к школе"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#correctionalClasses"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">Коррекционные занятия</h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-7.webp"
+                    alt="Коррекционные занятия"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#russianLanguage"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">Русский язык</h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-8.webp"
+                    alt="Русский язык"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#maths"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">Математика</h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-9.webp"
+                    alt="Математика"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
+
+              <div class="col directions__list-item">
+                <a
+                  href="#"
+                  class="directions__card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#effectiveReading"
+                >
+                  <article class="directions__card-item">
+                    <h3 class="directions__card-text">Эффективное чтение</h3>
+                  </article>
+
+                  <img
+                    src="./images/gallery/directions/cards/directions-10.webp"
+                    alt="Эффективное чтение"
+                    class="directions__card-img"
+                  />
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="feedback">
-            <div class="container">
-                <form class="needs-validation feedback__form" action="send_telegram.php" method="post"
-                    id="feedbackForm">
-                    <h2 class="global__title feedback__title">Оставьте заявку</h2>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="global__title reviews__title">Отзывы</h2>
 
-                    <div class="d-flex flex-column gap-3">
-                        <div class="feedback__form-item">
-                            <label for="nameInput" class="form-label feedback__form-label">Ваше имя</label>
-                            <input type="text" class="form-control feedback__form-input" id="nameInput" name="nameInput"
-                                aria-describedby="emailHelp" placeholder="Введите Ваше имя" required>
-                        </div>
+          <div
+            id="reviewsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#reviewsCarousel"
+              data-bs-slide="prev"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-arrow-left"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                />
+              </svg>
+            </button>
 
-                        <div class="feedback__form-item">
-                            <label for="specializationInput" class="form-label feedback__form-label">Направление</label>
-                            <select class="form-select feedback__form-input" id="specializationInput"
-                                name="specializationInput" aria-label="Default select example" required>
-                                <option selected disabled value="">Выберите направление</option>
-                                <option value="1">Ментальная арифметика</option>
-                                <option value="2">Скорочтение</option>
-                                <option value="3">Каллиграфия</option>
-                                <option value="4">Нейропсихологическая диагностика</option>
-                                <option value="5">Диагностика готовности к школе</option>
-                                <option value="6">Подготовка к школе</option>
-                                <option value="7">Коррекционные занятия</option>
-                                <option value="8">Русский язык</option>
-                                <option value="9">Математика</option>
-                                <option value="10">Эффективное чтение</option>
-                            </select>
-                        </div>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#reviewsCarousel"
+              data-bs-slide="next"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
 
-                        <div class="feedback__form-item">
-                            <label for="phoneNumberInput" class="form-label feedback__form-label">Телефон</label>
-                            <input type="tel" class="form-control feedback__form-input" id="phoneNumberInput"
-                                name="phoneNumberInput" placeholder="Ваш номер телефона" required>
-                        </div>
+            <div
+              class="carousel-inner-wrapper offset-1 offset-sm-2 col-10 col-sm-8"
+            >
+              <ul class="carousel-inner">
+                <li class="carousel-item active" data-bs-interval="10000">
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-person-circle mb-2 reviews__carousel-icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                      />
+                    </svg>
 
-                        <div class="feedback__form-item">
-                            <label for="ageInput" class="form-label feedback__form-label">Возраст ребенка</label>
-                            <input type="text" class="form-control feedback__form-input" id="ageInput" name="ageInput"
-                                placeholder="Введите возраст ребенка" required>
-                        </div>
-                    </div>
+                    <span class="reviews__carousel-author">Варвара Ракир</span>
+                  </div>
 
-                    <a class="text-center mt-5">
-                        <button type="submit" class="feedback__form-button">Отправить заявку</button>
-                    </a>
+                  <hr />
 
-                    <p id="successMessage" class="text-success d-none">Форма отправлена успешно</p>
-                </form>
+                  <p class="global__text reviews__carousel-text">
+                    Замечательное учреждение для детей, прекрасное отношение
+                    педагогов, доступный язык изложения материала, ребёнок
+                    занимается с удовольствием, за пол года отличный, заметный
+                    результат. Ходим на скорочтение, ментальную математику,
+                    занимаемся по школьной программе, планируем на каллиграфию.
+                    Спасибо огромное педагогам за отношение к ребёнку!!!
+                  </p>
+                </li>
+
+                <li class="carousel-item" data-bs-interval="10000">
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-people-fill reviews__carousel-icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                      />
+                    </svg>
+
+                    <span class="reviews__carousel-author"
+                      >Самарцева Мария</span
+                    >
+                    <span class="reviews__carousel-author"
+                      >Самарцев Влад, 10 лет</span
+                    >
+                  </div>
+
+                  <hr />
+
+                  <p class="global__text reviews__carousel-text">
+                    Ходим в эту школу на ментальную арифметику с марта 2022г.
+                    Очень внимательные, любящие детей педагоги с большой буквы.
+                    Ребёнок с удовольствием бежит на занятия, сейчас подключили
+                    скорочтение и каллиграфию, очень довольны. Всем родителям
+                    рекомендуем обязательно привести своего малыша на занятия в
+                    ISMA.
+                  </p>
+                </li>
+
+                <li class="carousel-item" data-bs-interval="10000">
+                  <div class="d-flex flex-column align-items-center mb-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-person-circle mb-2 reviews__carousel-icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                      />
+                    </svg>
+
+                    <span class="reviews__carousel-author"
+                      >Наталья Прошина</span
+                    >
+                  </div>
+
+                  <hr />
+
+                  <p class="global__text reviews__carousel-text">
+                    Ходим в ISMA с 5 лет. Начинали только с ментальной
+                    арифметики. Потом добавили скорочтение и подготовку к школе.
+                    Сейчас продолжаем ходить на ментальную арифметику.
+                    Преподаватели замечательные, к каждому ребёнку свой подход.
+                    Дочка занимается сама с удовольствием. Сейчас на каникулах
+                    скучает по учителям и урокам, за это огромное спасибо Олесе
+                    Александровне и Анжелике Анатольевне!
+                  </p>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <address class="row row-cols-1 row-cols-lg-2 gap-4 gap-lg-0">
+            <div class="col col-lg-4">
+              <ul class="map__address-list">
+                <li class="map__address-list-item">
+                  <span class="map__title">Адрес</span>
+                  <span class="global__text map__text"
+                    >г.Самара, ул. Осипенко 10а</span
+                  >
+                </li>
+
+                <li class="map__address-list-item">
+                  <a
+                    href="mailto:IsmaSchool@gmail.com"
+                    class="map__address-link"
+                  >
+                    <span class="map__title">E-mail</span>
+                    <span class="global__text map__text">
+                      IsmaSchool@gmail.com
+                    </span>
+                  </a>
+                </li>
+
+                <li class="map__address-list-item">
+                  <a href="tel:+79033020444" class="map__address-link">
+                    <span class="map__title">Телефон</span>
+                    <span class="global__text map__text"
+                      >+7 (903) 302-04-44</span
+                    >
+                  </a>
+                </li>
+
+                <li class="map__address-list-item">
+                  <a
+                    href="https://как-проехать.рф/самара/дом/осипенко-10а"
+                    target="_blank"
+                    class="map__title map__address-link text-center"
+                  >
+                    Как проехать?
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col col-lg-8">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c88f92514066b96ca266b586e7e7171fd965586140f477e82e6cdcdbaf02eaf&amp;source=constructor"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </address>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container">
+          <form
+            class="needs-validation feedback__form"
+            action="send_telegram.php"
+            method="post"
+            id="feedbackForm"
+          >
+            <h2 class="global__title feedback__title">Оставьте заявку</h2>
+
+            <div class="d-flex flex-column gap-3">
+              <div class="feedback__form-item">
+                <label for="nameInput" class="form-label feedback__form-label"
+                  >Ваше имя</label
+                >
+                <input
+                  type="text"
+                  class="form-control feedback__form-input"
+                  id="nameInput"
+                  name="nameInput"
+                  aria-describedby="emailHelp"
+                  placeholder="Введите Ваше имя"
+                  required
+                />
+              </div>
+
+              <div class="feedback__form-item">
+                <label
+                  for="specializationInput"
+                  class="form-label feedback__form-label"
+                  >Направление</label
+                >
+                <select
+                  class="form-select feedback__form-input"
+                  id="specializationInput"
+                  name="specializationInput"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected disabled value="">
+                    Выберите направление
+                  </option>
+                  <option value="1">Ментальная арифметика</option>
+                  <option value="2">Скорочтение</option>
+                  <option value="3">Каллиграфия</option>
+                  <option value="4">Нейропсихологическая диагностика</option>
+                  <option value="5">Диагностика готовности к школе</option>
+                  <option value="6">Подготовка к школе</option>
+                  <option value="7">Коррекционные занятия</option>
+                  <option value="8">Русский язык</option>
+                  <option value="9">Математика</option>
+                  <option value="10">Эффективное чтение</option>
+                </select>
+              </div>
+
+              <div class="feedback__form-item">
+                <label
+                  for="phoneNumberInput"
+                  class="form-label feedback__form-label"
+                  >Телефон</label
+                >
+                <input
+                  type="tel"
+                  class="form-control feedback__form-input"
+                  id="phoneNumberInput"
+                  name="phoneNumberInput"
+                  placeholder="Ваш номер телефона"
+                  required
+                />
+              </div>
+
+              <div class="feedback__form-item">
+                <label for="ageInput" class="form-label feedback__form-label"
+                  >Возраст ребенка</label
+                >
+                <input
+                  type="text"
+                  class="form-control feedback__form-input"
+                  id="ageInput"
+                  name="ageInput"
+                  placeholder="Введите возраст ребенка"
+                  required
+                />
+              </div>
+            </div>
+
+            <a class="text-center mt-5">
+              <button type="submit" class="feedback__form-button">
+                Отправить заявку
+              </button>
+            </a>
+
+            <p id="successMessage" class="text-success d-none">
+              Форма отправлена успешно
+            </p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer p-3">
-        <nav class="container border-bottom py-4">
-            <ul class="nav global__nav-items mb-3">
-                <li class="nav-item">
-                    <a class="nav-link" href="#manager">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#benefits">Преимущества</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#directions">Направление</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Галерея</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#reviews">Отзывы</a>
-                </li>
-            </ul>
+      <nav class="container border-bottom py-4">
+        <ul class="nav global__nav-items mb-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#manager">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#benefits">Преимущества</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#directions">Направление</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Отзывы</a>
+          </li>
+        </ul>
 
-            <div class="global__icons-center">
-                <a
-                    href="whatsapp://send?phone=79033020444&amp;text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B7%D0%BE%D0%B2%D1%83%D1%82%20%D0%9E%D0%BB%D0%B5%D1%81%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%BD%D0%B0%20%D0%94%D1%83%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%AF%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D1%88%D0%BA%D0%BE%D0%BB%D1%8B%20%22%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%22.%20%D0%91%D1%83%D0%B4%D1%83%20%D1%80%D0%B0%D0%B4%D0%B0%20%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C%20%D0%B2%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%B5%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0.%20">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="global__icons_socials" viewBox="0 0 16 16">
-                        <path
-                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                    </svg>
-                </a>
-                <a href="tg://resolve?domain=OlesyaDudorovaImperial">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="global__icons_socials" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
-                    </svg>
-                </a>
-                <a href="https://vk.com/ii_isma_samara" class="global__icons_socials">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
-                    </svg>
-                </a>
-            </div>
-        </nav>
+        <div class="global__icons-center">
+          <a
+            href="whatsapp://send?phone=79033020444&amp;text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B7%D0%BE%D0%B2%D1%83%D1%82%20%D0%9E%D0%BB%D0%B5%D1%81%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%BD%D0%B0%20%D0%94%D1%83%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%AF%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D1%88%D0%BA%D0%BE%D0%BB%D1%8B%20%22%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%22.%20%D0%91%D1%83%D0%B4%D1%83%20%D1%80%D0%B0%D0%B4%D0%B0%20%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C%20%D0%B2%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%B5%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0.%20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="global__icons_socials"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+              />
+            </svg>
+          </a>
+          <a href="tg://resolve?domain=OlesyaDudorovaImperial">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="global__icons_socials"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+              />
+            </svg>
+          </a>
+          <a href="https://vk.com/ii_isma_samara" class="global__icons_socials">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
 
-        <p class="text-center text-body-secondary mt-4">© 2023 Империя интеллекта</p>
+      <p class="text-center text-body-secondary mt-4">
+        © 2023 Империя интеллекта
+      </p>
     </footer>
 
     <div class="modal modal-lg fade" id="mentalMaths" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-1.png" alt="directions-1.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">
-                        Ментальная арифметика <span>(по методике «ISMA»)</span>
-                    </h3>
-
-                    <hr class="hr">
-
-                    <p class="global__text modal__body-text">
-                        Уникальная методика развития умственных способностей детей от 4 до 16 лет, основанная на системе
-                        устного счета. Обучаясь
-                        этой методике ребенок может решить любые арифметические задачи за несколько секунд (сложение,
-                        вычитание, умножение,
-                        деление, вычисление квадратного корня числа) в уме быстрее, чем с помощью калькулятора.<br><br>
-                        Методика тренирует скорость восприятия и обработки информации, развивает оба полушария мозга
-                        одновременно за счет
-                        мысленной визуализации вычислений на счетах абакус. Высокая скорость устного счета — это не
-                        главный, но интересный
-                        «побочный эффект».
-                    </p>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-1.png"
+                alt="directions-1.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">
+              Ментальная арифметика <span>(по методике «ISMA»)</span>
+            </h3>
+
+            <hr class="hr" />
+
+            <p class="global__text modal__body-text">
+              Уникальная методика развития умственных способностей детей от 4 до
+              16 лет, основанная на системе устного счета. Обучаясь этой
+              методике ребенок может решить любые арифметические задачи за
+              несколько секунд (сложение, вычитание, умножение, деление,
+              вычисление квадратного корня числа) в уме быстрее, чем с помощью
+              калькулятора.<br /><br />
+              Методика тренирует скорость восприятия и обработки информации,
+              развивает оба полушария мозга одновременно за счет мысленной
+              визуализации вычислений на счетах абакус. Высокая скорость устного
+              счета — это не главный, но интересный «побочный эффект».
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal modal-lg fade" id="speedReading" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-2.jpg" alt="directions-2.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">
-                        Скорочтение <span>(по методике «ISMA»)</span>
-                    </h3>
-
-                    <hr class="hr">
-
-                    <p class="global__text modal__body-text">
-                        Занятия по скорочтению позволяют решить проблемы, с которыми сталкиваются дети при обучении в
-                        школе. У ребенка часто
-                        падает успеваемость из-за постоянно увеличивающегося потока информации. Ребенок не успевает
-                        прочитать все, что от него
-                        требуется в школе, часто не совсем понимает прочитанный текст, и вынужден заучивать его
-                        наизусть. Это отнимает у него
-                        огромное количество времени и сил, и отбивает желание учиться, читать и получать новые знания.
-                        <br><br>
-                        Наша уникальная методика призвана решить эти проблемы не только у детей, но и у взрослых.
-                        Методика развивает работу
-                        мозга, в результате чего увеличиваются скорость чтения и понимание прочитанного. Если в
-                        традиционном смысле чтение
-                        происходит построчно за счет проговаривания вслух или «про себя», то здесь мозг благодаря
-                        системе специальных упражнений
-                        начинает считывать информацию вертикально. Ресурсы ребенка увеличиваются, ему легче дается
-                        учеба. Он чувствует себя
-                        свободнее и счастливее, а вместе с ним и вы.
-                    </p>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-2.jpg"
+                alt="directions-2.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">
+              Скорочтение <span>(по методике «ISMA»)</span>
+            </h3>
+
+            <hr class="hr" />
+
+            <p class="global__text modal__body-text">
+              Занятия по скорочтению позволяют решить проблемы, с которыми
+              сталкиваются дети при обучении в школе. У ребенка часто падает
+              успеваемость из-за постоянно увеличивающегося потока информации.
+              Ребенок не успевает прочитать все, что от него требуется в школе,
+              часто не совсем понимает прочитанный текст, и вынужден заучивать
+              его наизусть. Это отнимает у него огромное количество времени и
+              сил, и отбивает желание учиться, читать и получать новые знания.
+              <br /><br />
+              Наша уникальная методика призвана решить эти проблемы не только у
+              детей, но и у взрослых. Методика развивает работу мозга, в
+              результате чего увеличиваются скорость чтения и понимание
+              прочитанного. Если в традиционном смысле чтение происходит
+              построчно за счет проговаривания вслух или «про себя», то здесь
+              мозг благодаря системе специальных упражнений начинает считывать
+              информацию вертикально. Ресурсы ребенка увеличиваются, ему легче
+              дается учеба. Он чувствует себя свободнее и счастливее, а вместе с
+              ним и вы.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal modal-lg fade" id="calligraphy" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-3.png" alt="directions-3.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">
-                        Каллиграфия <span>(по методике «ISMA»)</span>
-                    </h3>
-
-                    <hr class="hr">
-
-                    <p class="global__text modal__body-text">
-                        Методика поможет вашему ребенку в легкой и увлекательной форме приобрести красивый почерк. В
-                        современном мире, когда все
-                        чаще вместо ручки используется клавиатура, умение красиво и грамотно писать составляет все
-                        большую ценность ременном
-                        мире, когда все чаще вместо ручки используется клавиатура, умение красиво и грамотно писать
-                        составляет все большую
-                        ценность.
-                    </p>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-3.png"
+                alt="directions-3.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">
+              Каллиграфия <span>(по методике «ISMA»)</span>
+            </h3>
+
+            <hr class="hr" />
+
+            <p class="global__text modal__body-text">
+              Методика поможет вашему ребенку в легкой и увлекательной форме
+              приобрести красивый почерк. В современном мире, когда все чаще
+              вместо ручки используется клавиатура, умение красиво и грамотно
+              писать составляет все большую ценность ременном мире, когда все
+              чаще вместо ручки используется клавиатура, умение красиво и
+              грамотно писать составляет все большую ценность.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="modal modal-lg fade" id="neuropsychologicalDiagnostics" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+    <div
+      class="modal modal-lg fade"
+      id="neuropsychologicalDiagnostics"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-4.jpg" alt="directions-4.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">Нейропсихологическая диагностика</h3>
-
-                    <hr class="hr">
-
-                    <p class="global__text modal__body-text">
-                        Нейропсихологическая диагностика – это процесс исследования состояния мозга, особенностей
-                        памяти, внимания, мышления и других психических процессов личности для выявления нарушений и их
-                        коррекции.<br><br>
-                        В ходе диагностики можно выявить: особенности функционирования участков мозга и очаги патологий,
-                        которые могут быть
-                        напрямую связаны с трудностями в поведении, в характере, в обучении, в общении.
-                    </p>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-4.jpg"
+                alt="directions-4.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">Нейропсихологическая диагностика</h3>
+
+            <hr class="hr" />
+
+            <p class="global__text modal__body-text">
+              Нейропсихологическая диагностика – это процесс исследования
+              состояния мозга, особенностей памяти, внимания, мышления и других
+              психических процессов личности для выявления нарушений и их
+              коррекции.<br /><br />
+              В ходе диагностики можно выявить: особенности функционирования
+              участков мозга и очаги патологий, которые могут быть напрямую
+              связаны с трудностями в поведении, в характере, в обучении, в
+              общении.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="modal modal-lg fade" id="diagnosticsOfSchoolReadiness" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+    <div
+      class="modal modal-lg fade"
+      id="diagnosticsOfSchoolReadiness"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-5.png" alt="directions-5.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">Диагностика готовности к школе</h3>
-
-                    <hr class="hr">
-
-                    <p class="global__text modal__body-text">
-                        Диагностика включает в себя 23 методики, с помощью которой мы проверим все три аспекта школьной
-                        зрелости вашего ребёнка
-                        (интеллектуальный, эмоционально-волевой, мотивационный). Диагностика занимает 1 час + 30 минут
-                        консультация с родителями
-                        по результатам обследования. Консультация проводится в любое удобное для вас время. С детьми
-                        работает наш преподаватель
-                        и дипломированный психолог Анжелика Анатольевна. Рекомендуемый возраст: 6-6.5 лет.<br><br>
-                        ❗️ Важно ❗️<br><br>
-                        Целью диагностики является не деление детей на группы, по определённым критериям, а анализ
-                        сильных и слабых сторон
-                        психических функций ребёнка, для возможности дальнейшей коррекции и преодоления этих трудностей.
-                    </p>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-5.png"
+                alt="directions-5.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">Диагностика готовности к школе</h3>
+
+            <hr class="hr" />
+
+            <p class="global__text modal__body-text">
+              Диагностика включает в себя 23 методики, с помощью которой мы
+              проверим все три аспекта школьной зрелости вашего ребёнка
+              (интеллектуальный, эмоционально-волевой, мотивационный).
+              Диагностика занимает 1 час + 30 минут консультация с родителями по
+              результатам обследования. Консультация проводится в любое удобное
+              для вас время. С детьми работает наш преподаватель и
+              дипломированный психолог Анжелика Анатольевна. Рекомендуемый
+              возраст: 6-6.5 лет.<br /><br />
+              ❗️ Важно ❗️<br /><br />
+              Целью диагностики является не деление детей на группы, по
+              определённым критериям, а анализ сильных и слабых сторон
+              психических функций ребёнка, для возможности дальнейшей коррекции
+              и преодоления этих трудностей.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal modal-lg fade" id="preparingForSchool" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-6.jpg" alt="directions-6.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">Подготовка к школе</h3>
-
-                    <hr class="hr">
-
-                    <span class="global__text modal__body-text">На дошкольной подготовке мы изучаем:</span>
-
-                    <ul class="global__text ps-4">
-                        <li>огромный блок окружающего мира - проходим всё, что нужно знать первокласснику;</li>
-
-                        <li>осваиваем основы Каллиграфия, изучаем прописные буквы;</li>
-
-                        <li>
-                            классическая математика - изучаем и отрабатываем состав числа, считаем длинные цепочки
-                            примеров, решаем задачи, решаем примеры с неизвестным слагаемым, вычитаемым, уменьшаемым;
-                        </li>
-
-                        <li>
-                            обучаем чтению, осуществляем переход от чтения по слогам к чтению словами. Работаем над
-                            пониманием прочитанного;
-                        </li>
-
-                        <li>развиваем фонематику и принципы базовой грамотности.</li>
-                    </ul>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-6.jpg"
+                alt="directions-6.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">Подготовка к школе</h3>
+
+            <hr class="hr" />
+
+            <span class="global__text modal__body-text"
+              >На дошкольной подготовке мы изучаем:</span
+            >
+
+            <ul class="global__text ps-4">
+              <li>
+                огромный блок окружающего мира - проходим всё, что нужно знать
+                первокласснику;
+              </li>
+
+              <li>осваиваем основы Каллиграфия, изучаем прописные буквы;</li>
+
+              <li>
+                классическая математика - изучаем и отрабатываем состав числа,
+                считаем длинные цепочки примеров, решаем задачи, решаем примеры
+                с неизвестным слагаемым, вычитаемым, уменьшаемым;
+              </li>
+
+              <li>
+                обучаем чтению, осуществляем переход от чтения по слогам к
+                чтению словами. Работаем над пониманием прочитанного;
+              </li>
+
+              <li>развиваем фонематику и принципы базовой грамотности.</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal modal-lg fade" id="correctionalClasses" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/manager/course-1.webp" alt="directions-7 (course-2)"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">Коррекционные занятия</h3>
-
-                    <hr class="hr">
-
-                    <p class="global__text modal__body-text">
-                        Цель коррекционных занятий - повышение уровня общего развития учащихся, восполнение пробелов
-                        предшествующего развития и
-                        обучения, индивидуальная работа по формированию недостаточно освоенных учебных умений и навыков,
-                        коррекция отклонений в
-                        развитии познавательной сферы и речи, направленная подготовка к восприятию нового учебного
-                        материала. Коррекционная
-                        работа осуществляется в рамках целостного подхода к воспитанию и развитию ребенка.
-                    </p>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/manager/course-1.webp"
+                alt="directions-7 (course-2)"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">Коррекционные занятия</h3>
+
+            <hr class="hr" />
+
+            <p class="global__text modal__body-text">
+              Цель коррекционных занятий - повышение уровня общего развития
+              учащихся, восполнение пробелов предшествующего развития и
+              обучения, индивидуальная работа по формированию недостаточно
+              освоенных учебных умений и навыков, коррекция отклонений в
+              развитии познавательной сферы и речи, направленная подготовка к
+              восприятию нового учебного материала. Коррекционная работа
+              осуществляется в рамках целостного подхода к воспитанию и развитию
+              ребенка.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal modal-lg fade" id="russianLanguage" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-8.jpg" alt="directions-8.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">Русский язык</h3>
-
-                    <hr class="hr">
-
-                    <ul class="global__text ps-4">
-                        <li>подходит детям от 7-11 лет;</li>
-
-                        <li>отработка базовых орфограмм 1-4 класса;</li>
-
-                        <li>без зубрёжки правил;</li>
-
-                        <li>исходный уровень знаний ребёнка не важен;</li>
-
-                        <li>индивидуальный подход;</li>
-                    </ul>
-
-                    <br>
-
-                    <span class="global__text modal__body-text">Что дают занятия:<br></span>
-
-                    <ul class="global__text ps-4">
-                        <li>повышение грамотности - ребенок допускает меньше ошибок в письменных работах;</li>
-
-                        <li>самоконтроль - ребенок видит свои ошибки;</li>
-
-                        <li>уходит страх перед диктантами и самостоятельными работами;</li>
-
-                        <li>ребёнок становится более аккуратным, внимательным;</li>
-
-                        <li>обогащается словарный запас ребёнка;</li>
-
-                        <li>повышается самооценка;</li>
-                    </ul>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-8.jpg"
+                alt="directions-8.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">Русский язык</h3>
+
+            <hr class="hr" />
+
+            <ul class="global__text ps-4">
+              <li>подходит детям от 7-11 лет;</li>
+
+              <li>отработка базовых орфограмм 1-4 класса;</li>
+
+              <li>без зубрёжки правил;</li>
+
+              <li>исходный уровень знаний ребёнка не важен;</li>
+
+              <li>индивидуальный подход;</li>
+            </ul>
+
+            <br />
+
+            <span class="global__text modal__body-text"
+              >Что дают занятия:<br
+            /></span>
+
+            <ul class="global__text ps-4">
+              <li>
+                повышение грамотности - ребенок допускает меньше ошибок в
+                письменных работах;
+              </li>
+
+              <li>самоконтроль - ребенок видит свои ошибки;</li>
+
+              <li>
+                уходит страх перед диктантами и самостоятельными работами;
+              </li>
+
+              <li>ребёнок становится более аккуратным, внимательным;</li>
+
+              <li>обогащается словарный запас ребёнка;</li>
+
+              <li>повышается самооценка;</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal modal-lg fade" id="maths" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-9.png" alt="directions-9.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">Математика</h3>
-
-                    <hr class="hr">
-
-                    <ul class="global__text ps-4">
-                        <li>подходит детям от 7-11 лет;</li>
-
-                        <li>отработка базовых орфограмм 1-4 класса;</li>
-
-                        <li>без зубрёжки правил;</li>
-
-                        <li>исходный уровень знаний ребёнка не важен;</li>
-
-                        <li>индивидуальный подход;</li>
-                    </ul>
-
-                    <br>
-
-                    <span class="global__text modal__body-text">Что изучаем:<br></span>
-
-                    <ul class="global__text ps-4">
-                        <li>
-                            закрепление навыков сложения и вычитания двузначных чисел в пределах 10, 20, 100, 1000 (в
-                            зависимости от класса);
-                        </li>
-
-                        <li>развитие умения читать, записывать и решать математические выражения;</li>
-
-                        <li>Закрепление алгоритма арифметических действий сложения, вычитания, умножения и деления;</li>
-
-                        <li>изучение табличного и внетабличного умножения и деления (в зависимости от класса);</li>
-
-                        <li>единицы измерения и соотношение между ними;</li>
-
-                        <li>устные и письменные приёмы вычисления;</li>
-
-                        <li>решение задач;</li>
-
-                        <li>решение уравнений;</li>
-                    </ul>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-9.png"
+                alt="directions-9.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">Математика</h3>
+
+            <hr class="hr" />
+
+            <ul class="global__text ps-4">
+              <li>подходит детям от 7-11 лет;</li>
+
+              <li>отработка базовых орфограмм 1-4 класса;</li>
+
+              <li>без зубрёжки правил;</li>
+
+              <li>исходный уровень знаний ребёнка не важен;</li>
+
+              <li>индивидуальный подход;</li>
+            </ul>
+
+            <br />
+
+            <span class="global__text modal__body-text"
+              >Что изучаем:<br
+            /></span>
+
+            <ul class="global__text ps-4">
+              <li>
+                закрепление навыков сложения и вычитания двузначных чисел в
+                пределах 10, 20, 100, 1000 (в зависимости от класса);
+              </li>
+
+              <li>
+                развитие умения читать, записывать и решать математические
+                выражения;
+              </li>
+
+              <li>
+                Закрепление алгоритма арифметических действий сложения,
+                вычитания, умножения и деления;
+              </li>
+
+              <li>
+                изучение табличного и внетабличного умножения и деления (в
+                зависимости от класса);
+              </li>
+
+              <li>единицы измерения и соотношение между ними;</li>
+
+              <li>устные и письменные приёмы вычисления;</li>
+
+              <li>решение задач;</li>
+
+              <li>решение уравнений;</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal modal-lg fade" id="effectiveReading" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./images/gallery/directions/modals/directions-10.png" alt="directions-10.png"
-                            class="modal__img">
-                    </div>
-
-                    <h3 class="modal__body-title">Эффективное чтение</h3>
-
-                    <hr class="hr">
-
-                    <span class="global__text modal__body-text">
-                        Для детей умеющих читать по слогам, но испытывающих определённые трудности:<br>
-                    </span>
-
-                    <ul class="global__text ps-4">
-                        <li>Низкая скорость чтения;</li>
-
-                        <li>Нет понимания прочитанного;</li>
-
-                        <li>Проблемы с техникой чтения (ребенок путает буквы, пропускает буквы, меняет их местами);</li>
-                    </ul>
-                </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="./images/gallery/directions/modals/directions-10.png"
+                alt="directions-10.png"
+                class="modal__img"
+              />
             </div>
+
+            <h3 class="modal__body-title">Эффективное чтение</h3>
+
+            <hr class="hr" />
+
+            <span class="global__text modal__body-text">
+              Для детей умеющих читать по слогам, но испытывающих определённые
+              трудности:<br />
+            </span>
+
+            <ul class="global__text ps-4">
+              <li>Низкая скорость чтения;</li>
+
+              <li>Нет понимания прочитанного;</li>
+
+              <li>
+                Проблемы с техникой чтения (ребенок путает буквы, пропускает
+                буквы, меняет их местами);
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
