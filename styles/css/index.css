@@ -576,7 +576,6 @@
 }
 .map__address-list-item {
   list-style: none;
-  padding: 10px 20px;
   color: #fff;
   background-color: #17a2dd;
   border: 2px solid #17a2dd;
@@ -591,10 +590,12 @@
   transform: translateX(5px);
 }
 .map__address-list-item:first-child {
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
 }
 .map__address-link {
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   text-decoration: none;

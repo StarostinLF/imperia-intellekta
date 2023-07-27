@@ -101,7 +101,7 @@
 
   &__overlay {
     -webkit-backdrop-filter: blur(1px);
-            backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
     background: $ismaManagerOverlayColor;
   }
 
@@ -378,7 +378,7 @@
 
   &__overlay {
     -webkit-backdrop-filter: blur(1px);
-            backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
     background: $ismaDirectionsOverlayColor;
   }
 
@@ -556,7 +556,6 @@
 
       &-item {
         list-style: none;
-        padding: 10px 20px;
         color: $whiteColor;
         background-color: $ismaLightBlueColor;
         border: 2px solid $ismaLightBlueColor;
@@ -572,6 +571,7 @@
         }
 
         &:first-child {
+          padding: 10px 20px;
           display: flex;
           flex-direction: column;
         }
@@ -579,6 +579,7 @@
     }
 
     &-link {
+      padding: 10px 20px;
       display: flex;
       flex-direction: column;
       text-decoration: none;
