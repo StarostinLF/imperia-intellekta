@@ -735,6 +735,9 @@
 .feedback__form-input::placeholder {
   color: #737d8c;
 }
+.feedback__form_pointer:hover {
+  cursor: pointer;
+}
 .feedback__form-button {
   width: 50%;
   padding: 20px;
