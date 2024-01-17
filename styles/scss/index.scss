@@ -399,6 +399,12 @@
         opacity: 0.8;
         transform: translateY(-20px);
       }
+
+      &:nth-child(5) {
+        .directions__card-text {
+          font-size: 18px;
+        }
+      }
     }
   }
 
