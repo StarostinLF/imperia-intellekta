@@ -8,4 +8,6 @@
 - Таблицы стилей и препроцессор ([css](https://github.com/itsUltraWolf/Imperia-intellekta/tree/main/styles/css), [scss](https://github.com/itsUltraWolf/Imperia-intellekta/tree/main/styles/scss))
 - HTML-файл главной страницы ([index.html](https://github.com/itsUltraWolf/Imperia-intellekta/blob/main/index.html))
 
+Примечание: сайт является заказным, вёрстка может быть не валидной.
+
 Сделан на фреймворке [Twitter Bootstrap (v5.3.0)](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
